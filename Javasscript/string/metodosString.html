@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos String</title>
+</head>
+<body>
+    <script>
+        //Declaração de variáveis
+        let saudacao, ios, nome, frase1;
+
+        //Atribuir valor para as variáveis
+        saudacao = 'Olá pessoa';
+        ios = 'Instituto da Oportunidade Social';
+        gap = ' ';
+
+        //prompt resgata alguma informação de usuário a partir da tela
+        nome = prompt('Qual seu nome infeliz?');
+        frasel = 'Ser ou não ser, cadê o busão?';
+
+        //Apresentação de variáveis no documento
+        document.write(saudacao + gap + nome + '<br>' + gap + frase1);
+
+        // Forma moderna que se chama Template string
+        //Interpolação de texto e variáveis
+        // -> (${Aqui dentro escrevo JavaScript})
+        // É necessario ultilizar um par de crases
+        document.write(`Seja bem vindo(a) ${saudacao} ${nome} <br> ${frase1}`)
+        document.write(`Métodos String<h1>`)
+        console.log(frase1.length); //Propriedade lenght retorna o tamanho da váriavel
+        console.log(ios.length()); //
+        console.log(nome.length());
+        console.log(saudacao.length);
+        console.log(gap.length);
+
+
+        var frase2;
+        frase2 = 'as linguagens de programação são utilizadas para instruir as máquinas a realizarem tarefas de variádos tipos, por exemplo; calculos financeiros, reconhecimento de padroes, automação de processos. para saber mais, leia mais '
+
+        console.log(frase2.split('a'))

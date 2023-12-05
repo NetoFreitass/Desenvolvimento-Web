@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms em HTML</title>
+</head>
+
+<body> 
+    <header>
+        <h1>Formulário de Transporte</h1>
+    </header>
+    <article>
+        <form action="#">
+            <fieldset>
+                <legend>Identificação</legend> <br>
+                <label for="Nome">Nome:</label><br>
+                <input type="text" size="50" name="Nome" id="Nome" required>
+                <br><Br>
+                    <p>Você mora:</p>
+                    <input type="radio" name="tipo" id="cid" volue="c">
+                    <label for="cid">Cidade</label><br>
+                    <input type="radio" name="tipo" id="inter" volue="I">
+                    <label for="inter">Inteiro</label>
+            </fieldset>
+
+                <br><br>
+
+            <fieldset>  
+                <legend>informações extras</legend> 
+                    <p>Qual meio de transporte você usa?</p>
+                    <input type="checkbox" id="transporte1" name="transporte1" value="Bi"
+                    
+                    <label for="transportel"> Bicicleta</label><br>
+                    <input type="checkbox" id="transporte2" name="transporte2" value="ca">
+                    
+                    <label for="transporte2">Carro</label><br>
+                    <input type="checkbox" id="transporte3" name="transporte"3 value="me">
+                    
+                    <label for="transporte3">Metrô</label><br>
+                    <input type="checkbox" id="transporte4" name="transporte4" value="Bu">
+                    
+                    <label for="transporte4">Ônibus</label> <br> <br>
+                    <label for="Time">Selecione seu time</label>
+                    <select name="time" id="time">
+                    <option value="Naútico">Naútico</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    </select>
+                    <br><br>
+                    <label for="cCid">Escolha a sua cidade na lista:</label>
+                    <input autocomplete="on" list="Cidade" name="tCid" id="cCid" placeholder="Sua cidade">
+                    <datalist id="Cidade">
+                    <option value="Olinda"></option> 
+                    <option value="Recife"></option>
+                    <option value="Paulista"></option>
+                    <option value="Igarassu"></option>
+                    </datalist>
+            </fieldset>     
+
+                <br><br>
+                <legend><strong>Idade:</strong></legend>
+                0
+                <input type="range" id="valor 01" name="valor_01"/>
+                100 + 
+                <input type="number" name="valor02" id="valor02" value="50">
+                =
+                <output name="result" for="valor01 valor02"></output> 
+                <br><br>
+                <fieldset>
+                <legend><strong>Sua opinião:</strong></legend>
+                <p>Sugestões, elogios e críticas</p>
+                <textarea name="message" cols="50" rows="10" placeholder="deixe aqui sua mensagem" required> </textarea>
+            </fieldset>
+                <br><br>
+                <!--Imput gera botão value para definir seu nome-->
+                <input type="submit" value="Enviar">
+        </form>
+    </article>
+    <footer>
+        <small>(IOS) Instituto De Oportunidade Social</small>
+    </footer>
+</body>
+</html>

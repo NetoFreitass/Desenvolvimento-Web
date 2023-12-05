@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugue ou compre seu veículo</title>
+</head>
+<body>
+    
+    <script>
+    //Declaração de variaveis
+    let cliente;
+    let pedido = false;
+    let veiculo = ['BMW', 'Fiat Uno', 'Tesla'];
+    let veiculoEscolhido;
+
+    //Solicitar e armazenar nome do cliente na variavel;
+cliente = prompt('digite seu nome')
+cliente = prompt('digite seu número')
+    //Apresentar os carros e entender qual o cliente prefere; 
+    
+    veiculoEscolhido = prompt('[0] - BMW\n[1] - Fiat Uno\n[2] - Tesla')
+
+document.write(`Olá ${cliente} seu orçamento para ${veiculo[+veiculoEscolhido]} está sendo desenvolvido, aguarde um momento...`);
+    </script>
+    
+</body>
+</html>
